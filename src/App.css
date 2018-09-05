@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,800');
+
+body {
+  font-family: monospace;
+  width: 100%;
+}
+
+#container {
+  padding: 50px;
+  background-color: #FFF;
+}
+
+.colorSquare {
+  box-shadow: 0px 0px 25px 0px #333;
+  width: 242px;
+  height: 242px;
+  margin-bottom: 15px;
+  display:flex;
+  transition: top .5s,left .5s;
+
+}
+
+.colorArea input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #CCC;
+}
+
+.colorArea button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  background-color: #666;
+  color: #FFF;
+  border: 2px solid #666;
+}
+
+.colorArea button:hover {
+  background-color: #111;
+  border-color: #111;
+  cursor: pointer;
+}
+
+.name {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.logo {
+  margin-left: 40px;
+  display: block;
+}
+
+.letter {
+  font-size: 50px;
+  line-height: 30px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  letter-spacing: -5px;
+  /*mix-blend-mode: color-burn;*/
+  position: relative;
+  transition: top ease 0.1s;
+  transition-delay: 2s;
+  opacity: 0.9;
+}
+
+#a {
+  color: #3949ab;
+}
+
+@keyframes mymove {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 15px;
+  }
+  100% {
+    top: 0px;
+}
+}
+
+.hovered {
+animation: mymove 3s;
+}
+
+::selection {
+background: #b39ddb;
+}
